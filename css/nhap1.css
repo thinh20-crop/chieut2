@@ -1,0 +1,121 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header .logo img {
+    width: 50px;
+}
+
+.header .menu {
+    display: flex;       /* CHUẨN FLEX */
+    gap: 20px;
+    list-style: none;
+}
+
+.header .menu li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header .menu li.active {
+    background: green;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.header .search input {
+    padding: 5px;
+}
+
+.header .search button {
+    padding: 5px 10px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* BANNER */
+.banner-section {
+    display: flex;           /* FLEX ngang */
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+}
+
+.banner-section .banner-img img {
+    width: 600px;
+    height: auto;
+}
+
+.banner-section .banner-text {
+    flex: 1;
+}
+
+.banner-section .banner-text h2 {
+    margin-bottom: 15px;
+}
+
+.banner-section .banner-text p {
+    margin-bottom: 15px;
+}
+
+.banner-section .banner-text button {
+    padding: 8px 15px;
+    background: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* CARDS */
+.cards {
+    display: flex;         /* FLEX ngang */
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.cards .card {
+    flex: 1;               /* chia đều 3 cột */
+    background: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cards .card img {
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #dfe5e0;
+    padding: 15px 0;
+    margin-top: 30px;
+}
